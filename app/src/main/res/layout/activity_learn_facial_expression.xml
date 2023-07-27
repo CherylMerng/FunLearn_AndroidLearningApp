@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LearnFacialExpressionActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/twincells"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:id="@+id/twincells"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/abc">
+
+        <ImageView
+            android:id="@+id/image"
+            android:background="#E8E8E8"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="2" />
+
+        <WebView
+            android:id="@+id/WebView"
+            android:background="@drawable/border"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
+            tools:ignore="WebViewLayout" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/abc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/takepic">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="1"
+            android:background="#E8E8E8" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/returnbtn"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="&lt;-"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/round_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/takepic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#6d33f5"
+        android:text="Take Picture"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingHorizontal="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

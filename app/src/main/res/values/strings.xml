@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FacialRecognitionAndroidPrototype</string>
+    <string name="expression_msg">Your Expression</string>
+    //ERRORS
+    <string name="NO_INTERNET_ERR">Please ensure that you are connected to the internet.</string>
+    <string name="GENERIC_ERR">An error has occurred, please try again.</string>
+    <string name="SERVER_ERR">A server error has occurred, please try again later.</string>
+    <string name="SERVER_DOWN_ERR">The server is currently busy or unavailable, please try again later.</string>
+
+    <string name="EXPRESSION_ERR">Unable to identify expression, please try again.</string>
+
+    //SERVER ADDRESS
+    //replace xxxxxxxxx with your IPv4 address
+    //for Windows, open Command Prompt and type in ipconfig/all
+    <string name="HOST_ADDRESS">http://192.168.1.137:8083/</string>
+    <string name="HOST_ADDRESS_FLASK">http://192.168.1.137:8080/</string>
+</resources>
